@@ -1,10 +1,7 @@
 package com.qoobico.getparty;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import static com.qoobico.getparty.R.menu.menu;
