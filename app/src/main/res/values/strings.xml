@@ -4,4 +4,9 @@
     <string name="message_title">Message</string>
     <string name="view_navigation_open">Open</string>
     <string name="view_navigation_close">Close</string>
+
+    <string name="tab_item_CurActivity">Текущие мероприятия</string>
+    <string name="tab_item_YourActivity">Ваши мероприятия</string>
+    <string name="tab_item_History">История</string>
+
 </resources>

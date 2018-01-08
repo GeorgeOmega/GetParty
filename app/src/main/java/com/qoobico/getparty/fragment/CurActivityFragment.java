@@ -1,26 +1,30 @@
 package com.qoobico.getparty.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.qoobico.getparty.R;
 
 /**
  * Created by George Omega on 08.01.2018.
  */
 
-public class ExampleFragment extends Fragment {
+public class CurActivityFragment extends AbstractTabFragment {
     private static final int LAYOUT= R.layout.fragment_example;
-    private View view;
 
-    public static ExampleFragment getInstance()
+
+
+    public static CurActivityFragment getInstance(Context context)
     {
         Bundle args=new Bundle();
-        ExampleFragment fragment=new ExampleFragment();
+        CurActivityFragment fragment=new CurActivityFragment();
         fragment.setArguments(args);
+        fragment.setContext(context);
+        fragment.setTitle(context.getString(R.string.tab_item_CurActivity));
         return fragment;
     }
 
@@ -30,4 +34,9 @@ public class ExampleFragment extends Fragment {
         view=inflater.inflate(LAYOUT,container,false);
         return view;
     }
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
 }
